@@ -23,6 +23,9 @@ jobs:
           key: ${{ runner.os }}-sccache-v3
       - name: Build Linux installable archive
         run: |
+          # For debug purpose
+          df -h
+          du -hd3 $SOURCE_PATH
           ./utils/webassembly/ci.sh
           echo "Cleanup build directory to free disk space"
           rm -rf ../build
