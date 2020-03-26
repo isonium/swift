@@ -23,6 +23,10 @@ FLAGS="--release $CACHE_FLAGS --verbose"
 
 $BUILD_SCRIPT $FLAGS
 
+# For debug purpose
+df -h
+du -hd3 $SOURCE_PATH
+
 if [[ "$(uname)" == "Linux" ]]; then
   echo "Skip running test suites for Linux"
 else
