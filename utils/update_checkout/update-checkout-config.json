@@ -63,7 +63,7 @@
                 "swift-syntax": "master",
                 "swift-stress-tester": "master",
                 "swift-corelibs-xctest": "master",
-                "swift-corelibs-foundation": "master",
+                "swift-corelibs-foundation": "swiftwasm",
                 "swift-corelibs-libdispatch": "master",
                 "swift-integration-tests": "master",
                 "swift-xcode-playground-support": "master",
