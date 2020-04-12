@@ -308,7 +308,7 @@ def apply_default_arguments(toolchain, args):
     # On OS X, libdispatch is provided by the OS.
     # On Linux, we must ensure that it is built manually.
     if (args.build_foundation and
-            platform.system() != "Darwin"):
+            platform.system() != "Darwin" and not args.wasm):
         args.build_libdispatch = True
 
     if args.build_subdir is None:
